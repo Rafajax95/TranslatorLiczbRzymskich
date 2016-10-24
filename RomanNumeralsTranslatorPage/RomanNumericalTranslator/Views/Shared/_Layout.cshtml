@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - System Rzymski</title>
+
+    <link rel="stylesheet" type="text/css" href="~/Styles/style.css">
+
+
+</head>
+<body>
+    <div id="container">
+        <div id="top"></div>
+        <div id="menu">
+            <ul>
+                <li class="menuElement">@Html.ActionLink("Kalkulator", "CalculatorView", "Home")</li>
+                <li class="lastMenuElement">@Html.ActionLink("O systemie rzymskim", "About", "Home")</li>
+            </ul>
+
+        </div>
+        <div id="leftBar">
+        </div>
+        <div id="content">
+            @RenderBody()
+        </div>
+        <div id="rightBar">
+        </div>
+        <div id="footer">
+            <div id="copyright"> Copyright &copy @DateTime.Now.Year translatorliczbrzymskich.azurewebsites.net </div>
+            <div id="author">Created by: Daniel Zub</div>
+        </div>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralsTranslator", "RomanNumericalTranslator\RomanNumeralsTranslator.csproj", "{D565C8E8-D8B4-45E7-BA28-475352626924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArabianRomanNumericalTranslator", "..\RomanNumeralsTranslator\ArabianRomanNumericalTranslator\ArabianRomanNumericalTranslator.csproj", "{C53AFAF1-EE9B-471E-B1B5-95DCB9821DA0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D565C8E8-D8B4-45E7-BA28-475352626924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D565C8E8-D8B4-45E7-BA28-475352626924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D565C8E8-D8B4-45E7-BA28-475352626924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D565C8E8-D8B4-45E7-BA28-475352626924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C53AFAF1-EE9B-471E-B1B5-95DCB9821DA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C53AFAF1-EE9B-471E-B1B5-95DCB9821DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C53AFAF1-EE9B-471E-B1B5-95DCB9821DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C53AFAF1-EE9B-471E-B1B5-95DCB9821DA0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

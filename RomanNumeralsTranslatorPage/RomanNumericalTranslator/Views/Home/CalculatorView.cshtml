@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Kalkulator";
+}
+
+<div id="CalculatorField">
+    <input name="translation" type="radio" value="arabian" checked /> Arabskie na Rzymskie </br >
+    <input name="translation" type="radio" value="roman" /> Rzymskie na Arabskie </br >
+    <input name="input" id="inputField" type="text" autocomplete="off" autofocus value="@ViewBag.Input" />
+
+    <label id="result"></label>
+    <label id="info"></label>
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+
+<script>
+
+    $('#inputField').on('input', function () {
+
+        var inputValue = $('#inputField').val();
+        $.ajax({
+            type: "POST",
+            url: "/Home/Translate",
+            data: {
+                input: $('#inputField').val(),
+                translation: $('input[name=translation]:radio:checked').val()
+
+            }
+        }).done(function (result) {
+            $('#result').html(result)
+        })
+    });
+</script>
